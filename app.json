@@ -25,7 +25,12 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      ["@clerk/expo", { "enableNativeComponents": true }],
+      [
+        "@clerk/expo",
+        {
+          "enableNativeComponents": true
+        }
+      ],
       "expo-router",
       [
         "expo-splash-screen",
@@ -36,7 +41,8 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
