@@ -1,3 +1,3 @@
 export function GET(request: Request) {
-  return Response.json({ hello: "world" });
+  return Response.json({ hello: "nsbdchfgsdvchsjgdchjbvshjsdbhjv" });
 }
