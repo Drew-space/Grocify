@@ -2,8 +2,11 @@ import { desc, eq } from "drizzle-orm";
 import { db } from "./db/client";
 import { groceryItems } from "./db/schema";
 
-export const lisGroceryItems = async () => {
-  const rows = await db.select().from(groceryItems).orderBy(desc(groceryItems));
+export const listGroceryItems = async () => {
+  const rows = await db
+    .select()
+    .from(groceryItems)
+    .orderBy(desc(groceryItems.updated_at));
 
   return rows;
 };
